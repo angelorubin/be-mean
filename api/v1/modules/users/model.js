@@ -11,14 +11,20 @@ const mongoose = require('mongoose'),
 	  		type : String,
 	  		required : true
 	  	},
+	  	dateBirth : {
+	  		type : Date
+	  	},
 	  	email: { 
 	  		type : String,
 	  		unique : true,
 	  		required : true
 	  	},
-	  	password: String
-	  },
-	  userSchema = new Schema(_schema),
-	  UserModel = mongoose.model('User', userSchema);
-
-module.exports = UserModel; 
+	  	password: {
+	  		type : String
+	  	},
+	  	phones : Array,
+	  	adresses : Array
+	  }
+	  , userSchema = new Schema(_schema);
+	  
+	  module.exports = mongoose.model('User', userSchema);

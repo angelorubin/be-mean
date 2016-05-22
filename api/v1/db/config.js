@@ -1,7 +1,7 @@
 'use strict';
 
 const mongoose = require('mongoose');
-const dbURI = 'mongodb://localhost:27017/be-mean';
+const dbURI = 'mongodb://angelorubin:apiweb@ds015892.mlab.com:15892/api-web';
 
 mongoose.connect(dbURI);
 

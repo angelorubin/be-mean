@@ -5,15 +5,22 @@
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "bootstrap-sass": "^3.3.6",
+    "chai": "^3.5.0",
     "compression": "^1.6.1",
+    "cors": "^2.7.1",
     "ejs": "^2.4.1",
     "express": "^4.13.4",
     "jade": "^1.11.0",
     "mongoose": "^4.4.10",
     "nodemon": "^1.9.1",
+    "pug": "^2.0.0-alpha7",
     "request": "^2.69.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"

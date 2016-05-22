@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="API">
+    <head>
+        <meta charset="utf-8">
+        <title>API Web - User List</title>
+    </head>
+    <body data-ng-controller="userController">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>API Web - <small>Users List</small></h1>
+                    <table class="table table-bordered bg-color">
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                        <tr data-ng-repeat="(key, value) in users">
+                            <td>{{ value.firstname }}</td>
+                        </tr>
+                    </ul>
+                </table>
+            </div>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js"></script>
+            <script type="text/javascript" src="app.js"></script>
+            <link rel="stylesheet" href="css/main.css">
+        </div>
+    </body>
+</html>
+
+<!--
+<h1>{{ title }}</h1>
+    {{ users.User._id }}
+    <form>
+        <fieldset class="form-group">
+            <label for="firstname">Firstname</label>
+            <input type="text" class="form-control" name="firstname">
+        </fieldset>
+        
+        <fieldset class="form-group">
+            <label for="lastname">Lastname</label>
+            <input type="text" class="form-control" name="lastname">
+            <p class="bg-danger" data-ng-if=""></p>
+        </fieldset>
+
+        <fieldset class="form-group">
+            <label for="email">E-mail</label>
+            <input type="text" class="form-control" name="email">
+        </fieldset>
+
+        <fieldset class="form-group">
+            <input ng-click="create()" type="submit" class="form-control btn-primary" value="Create User">
+        </fieldset>
+    </form>
+-->
